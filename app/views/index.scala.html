@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        @if(play.Play.isProd) {
+            <script type="text/javascript" src="/assets/javascripts/ext/main.min.js"></script>
+        } else {
+            <script type="text/javascript" src="/public/javascripts/ext/b.js"></script>
+            <script type="text/javascript" src="/public/javascripts/ext/a.js"></script>
+        }
+    </head>
+    <body>
+        Determine if prod or dev mode works with closure
+            @if(play.Play.isProd) {
+                <h1>Prod Mode</h1>
+            } else {
+                <h1>Dev mode</h1>
+            }
+    </body>
+</html>
